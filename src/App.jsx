@@ -9,7 +9,7 @@ function App() {
   }
 
   return (
-    <div style={{ backgroundColor: "salmon", color: "darkgreen" }}>
+    <div style={{ backgroundColor: "cyan", color: "black" }}>
       <h1>Count</h1>
       <h1>{count}</h1>
       <button onClick={handleAdd}>Add +</button>
