@@ -1,7 +1,20 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  return <div></div>;
+  const [count, setCount] = useState(0);
+
+  function handleAdd() {
+    setCount((count) => count + 1);
+  }
+
+  return (
+    <div style={{ backgroundColor: "salmon", color: "darkgreen" }}>
+      <h1>Count</h1>
+      <h1>{count}</h1>
+      <button onClick={handleAdd}>Add +</button>
+    </div>
+  );
 }
 
 export default App;
